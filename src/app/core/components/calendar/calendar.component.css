@@ -1,0 +1,38 @@
+.table-cell {
+  height: 15vh;
+  max-height: 15vh;
+  overflow-y: auto;
+  border: 1px solid black;
+  margin:0 -1px -1px 0;
+}
+
+.table {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.blurred {
+  background-color: #dee2e6;
+  color: rgba(8, 15, 75, 0.26);
+  height: 100%;
+}
+
+.cell-header {
+  text-align: left;
+  padding: 4px;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.calender-top {
+  padding: 20px;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calender-title {
+  padding: 0 12px;
+}

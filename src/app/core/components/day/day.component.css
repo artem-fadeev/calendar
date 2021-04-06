@@ -1,0 +1,17 @@
+div {
+  background-color: cornflowerblue;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 4px 8px;
+  margin: 4px 2px;
+  font-size: medium;
+}
+
+div:hover {
+  background-color: #215BED;
+}
+
+div:active {
+  background-color: #0021ED;
+}

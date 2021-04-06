@@ -1,0 +1,14 @@
+<div class="calender-top">
+  <button mat-raised-button color="accent" (click)="previousMonth()"><</button>
+  <span class="calender-title">{{monthTitle}}</span>
+  <button mat-raised-button color="accent" (click)="nextMonth()">></button>
+</div>
+
+<div class="table" *ngFor="let row of calendar | chunk: 7">
+  <div class="table-cell" *ngFor="let cell of row;">
+    <div [ngClass]="{blurred: !isActualMonthDay(cell.getMonth())}">
+      <div class="cell-header">{{cell.getDate()}}</div>
+      <app-day [dayData]="getDayData(cell)"></app-day>
+    </div>
+  </div>
+</div>

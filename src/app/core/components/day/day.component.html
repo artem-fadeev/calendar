@@ -1,0 +1,6 @@
+<ng-container *ngFor="let event of dayData?.events">
+  <div (click)="onClick(event)">
+    <span>{{dateFormat(event.startTime)}} </span>
+    <span>{{event.title}}</span>
+  </div>
+</ng-container>
